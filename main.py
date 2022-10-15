@@ -23,7 +23,7 @@ def groupfinder():
         print(f"[-] Group Already Owned: {id}")
 print("Finder Started")
 hook = "https://discord.com/api/webhooks/985655474156363796/K5WGxwRuteNHax94mQ6PXsN09u-zxWJBSA7SYyvTPRNhHqlcXAsZYOohdAsXktnNimDL"
-threads = int(input("[-] How many threads: "))
+threads = int(100)
 while True:
     if threading.active_count() <= threads:
         threading.Thread(target=groupfinder).start()
